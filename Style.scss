@@ -1,0 +1,15 @@
+
+
+@mixin ring ($size, $color) {
+    height: $size;
+    width:  $size;
+    border: $size/40 solid $color;
+    border-radius: 50%;
+    background-color: none;
+    filter: drop-shadow(6px, 6x, 6px, $color)
+}
+
+.ring {
+    @include ring(200px, #ff0000);
+}
+
